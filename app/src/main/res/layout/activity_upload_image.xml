@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImageAct">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/imageNameET"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:hint="Enter the video name"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_upload"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/imagetoUploadIV"
+        android:layout_below="@id/imageNameET"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadImageBtn"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Upload Video"
+        android:layout_below="@id/imagetoUploadIV"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>
